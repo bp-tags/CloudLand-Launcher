@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LauncherWindow</class>
+ <widget class="QMainWindow" name="LauncherWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1512</width>
+    <height>1056</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>LauncherWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#centralWidget {
+  background-image: url(:/resources/images/background.jpg);
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-width: 12px;
+  border-color: rgba(220, 255, 240, 0.6);
+  border-radius: 12px;
+}
+
+</string>
+   </property>
+   <widget class="QLabel" name="labelTitle">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>40</y>
+      <width>671</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Church Text 'Shaded'</family>
+      <pointsize>-1</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#labelTitle {
+  font: 64pt &quot;Church Text 'Shaded'&quot;;
+  color: rgb(197, 230, 255);
+  font-size: 192px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Cloud Land</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frameLogin">
+    <property name="geometry">
+     <rect>
+      <x>780</x>
+      <y>380</y>
+      <width>661</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frameLogin {
+  background-color: rgba(14, 70, 138, 0.4);
+  border-style: double;
+  border-width: 4px;
+  border-radius: 12px;
+  border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0.477, y2:0.448773, stop:0 rgba(138, 186, 187, 0.8), stop:1 rgba(224, 248, 248, 0.4));
+}
+QLineEdit {
+  font: 26pt &quot;Church Text 'Shaded'&quot;;
+  background-color: rgba(248, 248, 248, 0.6)
+}
+QLabel {
+  font-family: &quot;Church Text 'Shaded'&quot;
+}
+</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="textUsername">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>110</y>
+       <width>501</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="inputMethodHints">
+      <set>Qt::ImhNoPredictiveText</set>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Username</string>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelLogin">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>10</y>
+       <width>251</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#labelLogin {
+  color: #eee;
+  font-size: 48pt;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>L o g i n</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="textPassword">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>180</y>
+       <width>501</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>32</number>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>Password</string>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonLogin">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>250</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#buttonLogin {
+  font: 24pt &quot;Church Text 'Shaded'&quot;;
+  color: rgb(242, 255, 255);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+  border-color: rgba(226, 253, 255, 0.9)
+}
+#buttonLogin:pressed {
+  background-color: rgba(10, 0, 113, 0.8);
+}
+</string>
+     </property>
+     <property name="text">
+      <string>o k</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelStatus">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>300</y>
+       <width>621</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Church Text 'Shaded'</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#labelStatus {
+  color: #eee;
+  font-size: 24px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Welcome to Cloud Land! </string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

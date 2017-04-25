@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/images/background.jpg</file>
+        <file>resources/fonts/ChurchTextShaded.ttf</file>
+    </qresource>
+</RCC>
