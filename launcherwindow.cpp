@@ -25,7 +25,7 @@ void LauncherWindow::on_buttonLogin_clicked()
 
   wait(2000L);
 
-  if(ui->textUsername->text() == "test" && ui->textPassword->text() == "test") {
+  if(ui->textEmail->text() == "test" && ui->textPassword->text() == "test") {
     ui->labelStatus->setText("Starting game... ");
     QCoreApplication::processEvents();
 

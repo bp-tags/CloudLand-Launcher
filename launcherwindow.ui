@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1512</width>
-    <height>1056</height>
+    <width>960</width>
+    <height>540</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -32,7 +32,7 @@
    <property name="styleSheet">
     <string notr="true">#centralWidget {
   background-image: url(:/resources/images/background.jpg);
-  background-repeat: no-repeat;
+  bacoground-size: cover;
   border-style: solid;
   border-width: 12px;
   border-color: rgba(220, 255, 240, 0.6);
@@ -44,10 +44,10 @@
    <widget class="QLabel" name="labelTitle">
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>190</x>
       <y>40</y>
-      <width>671</width>
-      <height>151</height>
+      <width>351</width>
+      <height>101</height>
      </rect>
     </property>
     <property name="font">
@@ -62,8 +62,8 @@
     <property name="styleSheet">
      <string notr="true">#labelTitle {
   font: 64pt &quot;Church Text 'Shaded'&quot;;
-  color: rgb(197, 230, 255);
-  font-size: 192px;
+  color: rgb(20,20,20);
+  font-size: 64px;
 }
 </string>
     </property>
@@ -77,26 +77,28 @@
    <widget class="QFrame" name="frameLogin">
     <property name="geometry">
      <rect>
-      <x>780</x>
-      <y>380</y>
-      <width>661</width>
-      <height>361</height>
+      <x>480</x>
+      <y>200</y>
+      <width>431</width>
+      <height>221</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">#frameLogin {
-  background-color: rgba(14, 70, 138, 0.4);
+  background-color: rgba(200, 200, 200, 0.2);
   border-style: double;
   border-width: 4px;
   border-radius: 12px;
   border-color: qlineargradient(spread:pad, x1:1, y1:1, x2:0.477, y2:0.448773, stop:0 rgba(138, 186, 187, 0.8), stop:1 rgba(224, 248, 248, 0.4));
 }
 QLineEdit {
-  font: 26pt &quot;Church Text 'Shaded'&quot;;
-  background-color: rgba(248, 248, 248, 0.6)
+  font: 16pt &quot;Arial&quot;;
+  background-color: rgba(248, 248, 248, 0.6);
 }
 QLabel {
-  font-family: &quot;Church Text 'Shaded'&quot;
+  font-family: &quot;Church Text 'Shaded'&quot;;
+  font-size: 12pt;
+  color: #eee;
 }
 </string>
     </property>
@@ -106,13 +108,13 @@ QLabel {
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLineEdit" name="textUsername">
+    <widget class="QLineEdit" name="textEmail">
      <property name="geometry">
       <rect>
-       <x>90</x>
-       <y>110</y>
-       <width>501</width>
-       <height>41</height>
+       <x>130</x>
+       <y>70</y>
+       <width>281</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="layoutDirection">
@@ -131,7 +133,7 @@ QLabel {
       <set>Qt::AlignCenter</set>
      </property>
      <property name="placeholderText">
-      <string>Username</string>
+      <string>E-Mail</string>
      </property>
      <property name="clearButtonEnabled">
       <bool>true</bool>
@@ -140,16 +142,16 @@ QLabel {
     <widget class="QLabel" name="labelLogin">
      <property name="geometry">
       <rect>
-       <x>240</x>
+       <x>10</x>
        <y>10</y>
-       <width>251</width>
-       <height>81</height>
+       <width>131</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
       <string notr="true">#labelLogin {
   color: #eee;
-  font-size: 48pt;
+  font-size: 32pt;
 }
 </string>
      </property>
@@ -160,10 +162,10 @@ QLabel {
     <widget class="QLineEdit" name="textPassword">
      <property name="geometry">
       <rect>
-       <x>90</x>
-       <y>180</y>
-       <width>501</width>
-       <height>41</height>
+       <x>130</x>
+       <y>110</y>
+       <width>281</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="maxLength">
@@ -188,8 +190,8 @@ QLabel {
     <widget class="QPushButton" name="buttonLogin">
      <property name="geometry">
       <rect>
-       <x>230</x>
-       <y>250</y>
+       <x>130</x>
+       <y>140</y>
        <width>171</width>
        <height>41</height>
       </rect>
@@ -215,20 +217,21 @@ QLabel {
     <widget class="QLabel" name="labelStatus">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>300</y>
-       <width>621</width>
-       <height>41</height>
+       <x>10</x>
+       <y>190</y>
+       <width>411</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Church Text 'Shaded'</family>
+       <family>Arial</family>
        <pointsize>-1</pointsize>
       </font>
      </property>
      <property name="styleSheet">
       <string notr="true">#labelStatus {
+  font-family: &quot;Arial&quot;;
   color: #eee;
   font-size: 24px;
 }
@@ -236,6 +239,38 @@ QLabel {
      </property>
      <property name="text">
       <string>Welcome to Cloud Land! </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family: &quot;Arial&quot;;</string>
+     </property>
+     <property name="text">
+      <string>E-Mail</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-family: &quot;Arial&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Password</string>
      </property>
     </widget>
    </widget>
