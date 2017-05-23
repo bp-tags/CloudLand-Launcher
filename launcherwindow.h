@@ -18,6 +18,8 @@ public:
 private slots:
     void on_buttonLogin_clicked();
 
+    void on_buttonRegister_clicked();
+
 private:
     Ui::LauncherWindow *ui;
 

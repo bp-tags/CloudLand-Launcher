@@ -5,6 +5,13 @@
 
 #include <QTime>
 #include <QCoreApplication>
+#include <QUrl>
+#include <QDesktopServices>
+
+#include "clhelper.h"
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <stdio.h>
 
 LauncherWindow::LauncherWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -52,4 +59,12 @@ void LauncherWindow::wait(long ms) {
     QTime t;
     t.start();
     while(t.elapsed() < ms) QCoreApplication::processEvents();
+}
+
+void LauncherWindow::on_buttonRegister_clicked()
+{
+    QJsonDocument* doc = parse(&QString("{\"test\": \"value\"}"));
+    printf("NULL? %s\n", (doc == NULL ? "YES" : "NO"));
+    ui->labelStatus->setText(doc->object().isEmpty() ? "YES" : "NO");
+    // QDesktopServices::openUrl(QUrl("http://dragonet.org/register"));
 }
